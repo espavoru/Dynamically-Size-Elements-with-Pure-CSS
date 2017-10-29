@@ -22,3 +22,4 @@ package-lock.json
 ex_files
 Thumbs.db
 __MACOSX
+/nbproject/private/
