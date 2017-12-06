@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      
+
+      <main role="main">
+        <h3>Dynamically Size Elements with Pure CSS</h3>
+
+        <section>
+          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. </p>
+        </section>
+        <section>
+          <p>Встретил приставка бросил жизни выйти взобравшись вскоре пустился деревни однажды океана</p>
+        </section>
+        <section>
+          <p>Oсталось они жаренные безопасную над вопроса, взгляд имени. Переписали.</p>
+        </section>
+        <section>
+          <p>Встретил приставка бросил жизни выйти взобравшись вскоре пустился деревни однажды океана</p>
+        </section>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
