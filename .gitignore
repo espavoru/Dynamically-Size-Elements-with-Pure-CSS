@@ -1,4 +1,5 @@
 build/*
+src/img/Template/*
 !build/readme.md
 design/
 src/scss/style.scss
